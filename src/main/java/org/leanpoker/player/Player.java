@@ -15,9 +15,9 @@ public class Player {
         JsonObject root = request.getAsJsonObject();
         JsonArray players = root.getAsJsonArray("players");
 ////        System.err.println("Players: " + players);
-        JsonObject thisPlayer = players.getAsJsonObject();
-        JsonArray ourCards = thisPlayer.getAsJsonArray("hole_cards");
-        System.err.println("SANYI: " + ourCards);
+//        JsonObject thisPlayer = players.getAsJsonObject();
+//        JsonArray ourCards = thisPlayer.getAsJsonArray("hole_cards");
+//        System.err.println("SANYI: " + ourCards);
 ////        JsonPrimitive gameId = root.getAsJsonPrimitive("game_id");
 ////        System.err.println("GameId : " + gameId);
 ////        JsonPrimitive rounds = root.getAsJsonPrimitive("round");

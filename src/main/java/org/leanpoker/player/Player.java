@@ -11,10 +11,9 @@ public class Player {
 
     public static int betRequest(JsonElement request) {
         System.err.println("hello***************#####################################");
-
         JsonObject root = request.getAsJsonObject();
         JsonArray players = root.getAsJsonArray("players");
-        System.err.println(players);
+        System.err.println("####: " + players);
 
         return 0;
     }

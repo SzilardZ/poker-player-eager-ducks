@@ -1,19 +1,19 @@
 package org.leanpoker.player;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
-import java.util.Map;
+import org.json.*;
 
 public class Player {
 
     static final String VERSION = "Default Java folding player";
 
     public static int betRequest(JsonElement request) {
-        JsonParser parser = new JsonParser();
-        JsonObject o = parser.parse("{\"a\": \"A\"}").getAsJsonObject();
-        System.out.println(o);
+        JSONObject object = new JSONObject(request);
+
+        JSONArray players = object.getJSONArray("players");
+        System.err.println(players);
+
         return 0;
     }
 

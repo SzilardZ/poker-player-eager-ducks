@@ -14,7 +14,7 @@ public class Player {
         JsonElement players = request.getAsJsonObject();
         System.err.println(players);
 
-        return 1000;
+        return 0;
     }
 
     public static void showdown(JsonElement game) {

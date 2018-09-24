@@ -11,10 +11,12 @@ public class Player {
 
     public static int betRequest(JsonElement request) {
         JsonObject root = request.getAsJsonObject();
-        JsonArray players = root.getAsJsonArray("players");
-        System.err.println("Players: " + players);
-        JsonPrimitive rounds = root.getAsJsonPrimitive("round");
-        System.err.println("Rounds: HUHU" + rounds);
+//        JsonArray players = root.getAsJsonArray("players");
+//        System.err.println("Players: " + players);
+//        JsonPrimitive rounds = root.getAsJsonPrimitive("round");
+//        System.err.println("Rounds: HUHU" + rounds);
+        JsonArray communityCards = root.getAsJsonArray("community_cards");
+        System.err.println(communityCards);
 
         return 0;
     }

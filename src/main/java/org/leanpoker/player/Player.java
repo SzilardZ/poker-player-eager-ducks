@@ -2,7 +2,8 @@ package org.leanpoker.player;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
-import org.json.*;
+import com.google.gson.JsonObject;
+import org.json.JSONObject;
 
 public class Player {
 
@@ -11,7 +12,8 @@ public class Player {
     public static int betRequest(JsonElement request) {
         System.err.println("hello***************#####################################");
 
-        JsonElement players = request.getAsJsonObject();
+        JsonObject root = request.getAsJsonObject();
+        JsonArray players = root.getAsJsonArray("players");
         System.err.println(players);
 
         return 0;

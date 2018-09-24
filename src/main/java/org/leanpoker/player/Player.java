@@ -10,9 +10,8 @@ public class Player {
 
     public static int betRequest(JsonElement request) {
         System.err.println("hello***************#####################################");
-        JSONObject object = new JSONObject(request);
 
-        JSONArray players = object.getJSONArray("players");
+        JsonElement players = request.getAsJsonObject();
         System.err.println(players);
 
         return 1000;

@@ -3,7 +3,7 @@ package org.leanpoker.player;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.json.JSONObject;
+import com.google.gson.JsonPrimitive;
 
 public class Player {
 
@@ -13,8 +13,8 @@ public class Player {
         JsonObject root = request.getAsJsonObject();
         JsonArray players = root.getAsJsonArray("players");
         System.err.println("Players: " + players);
-        JsonArray rounds = root.getAsJsonArray("round");
-        System.err.println("Rounds: " + rounds);
+        JsonPrimitive rounds = root.getAsJsonPrimitive("round");
+        System.err.println("Rounds: HUHU" + rounds);
 
         return 0;
     }

@@ -18,7 +18,7 @@ public class Player {
         JsonPrimitive rounds = root.getAsJsonPrimitive("round");
         System.err.println("Rounds: HUHU" + rounds);
         JsonArray communityCards = root.getAsJsonArray("community_cards");
-        System.err.println(communityCards);
+        System.err.println("COMMUNITY: " + communityCards);
 
         return 0;
     }
